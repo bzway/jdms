@@ -1,0 +1,16 @@
+<html>
+<head>
+</head>
+
+<body>
+<div th:text="${@urlService.getApplicationUrl()}">...</div> 
+	<table>
+		<tr th:each="message : ${messageList}">
+			<td th:text="${session.id}">1</td>
+			<td th:text="${message.name}">Title</td>
+			<td th:text="${message.gender==1?'男':'女'}">Text ...</td>
+		</tr>
+	</table>
+</body>
+
+</html>
